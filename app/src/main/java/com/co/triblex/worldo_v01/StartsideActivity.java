@@ -39,6 +39,8 @@ public class StartsideActivity extends AppCompatActivity implements OnMenuSelect
         switch(i){
             case 0:
                 Toast.makeText(this, "Events", Toast.LENGTH_SHORT).show();
+                Intent events = new Intent(this,Events.class);
+                startActivity(events);
                 break;
             case 1:
                 Toast.makeText(this, "Send meetup request", Toast.LENGTH_SHORT).show();

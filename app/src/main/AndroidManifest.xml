@@ -37,7 +37,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".StartsideActivity" />
-        <activity android:name=".MeetupActivity"></activity>
+        <activity android:name=".MeetupActivity"> /></activity>
+        <activity android:name=".Events"> </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAtN2eLnJ-OGjWJY4DxULHX3iAnPxTuogk">
+        </meta-data>
     </application>
 
 </manifest>
