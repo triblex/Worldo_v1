@@ -14,7 +14,7 @@ import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlacePicker;
 //import com.google.android.gms.location.places;
 
-public class Events extends AppCompatActivity {
+public class EventsActivity extends AppCompatActivity {
 
     int PLACE_PICKER_REQUEST = 1;
     int status;
@@ -48,7 +48,8 @@ public class Events extends AppCompatActivity {
     @Override
     protected void onActivityResult (int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
+        System.out.println("Result code: "+resultCode);
+        System.out.println("Request code: "+requestCode);
         if (requestCode == 100){
             status = GooglePlayServicesUtil.isGooglePlayServicesAvailable(this);
         }

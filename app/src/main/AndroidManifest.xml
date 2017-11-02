@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
     package="com.co.triblex.worldo_v01">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -37,12 +36,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".StartsideActivity" />
-        <activity android:name=".MeetupActivity"> /></activity>
-        <activity android:name=".Events"> </activity>
+        <activity android:name=".MeetupActivity">
+            />
+        </activity>
+        <activity android:name=".EventsActivity"></activity>
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAtN2eLnJ-OGjWJY4DxULHX3iAnPxTuogk">
-        </meta-data>
+            android:value="AIzaSyAtN2eLnJ-OGjWJY4DxULHX3iAnPxTuogk"></meta-data>
+
+        <activity android:name=".SignUpActivity"></activity>
     </application>
 
 </manifest>

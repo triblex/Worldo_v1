@@ -74,7 +74,7 @@ public class MeetupActivity extends AppCompatActivity implements View.OnClickLis
                 e.printStackTrace();
             }
         }
-        if (requestCode == TAKE_PICTURE_REQUEST /* && resultCode == RESULT_OK && data != null && data.getData() != null */) {
+        if (requestCode == TAKE_PICTURE_REQUEST && data != null /*&& data.getData() != null */) {
             Bitmap bitmap = (Bitmap)data.getExtras().get("data");
             imageView.setImageBitmap(bitmap);
             Log.d("imageView", "Setting imageView to captured image!");
