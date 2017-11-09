@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "403433739411",
+    "firebase_url": "https://worldov01.firebaseio.com",
+    "project_id": "worldov01",
+    "storage_bucket": "worldov01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403433739411:android:03a35c7bedeca4d0",
+        "android_client_info": {
+          "package_name": "com.co.triblex.worldo_v01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403433739411-f23h9almo2rott1jdm6fgvhou3fmtlhq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.co.triblex.worldo_v01",
+            "certificate_hash": "88021c4b7cf7a293fd18fd2ba60d5ca2257e1e3c"
+          }
+        },
+        {
+          "client_id": "403433739411-v29qpc2rju6mhkugdcudnpngbl7mugn7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADxZ2ghhr7sW-uhFKcSEzpWWfvIuGAnLA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403433739411-v29qpc2rju6mhkugdcudnpngbl7mugn7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

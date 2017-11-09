@@ -42,11 +42,11 @@ public class StartsideActivity extends AppCompatActivity implements OnMenuSelect
         switch(i){
             case 0:
                 Toast.makeText(this, "EventsActivity", Toast.LENGTH_SHORT).show();
-                mHandler.postDelayed(mEvents,500);
+                mHandler.postDelayed(mEvents,700);
                 break;
             case 1:
                 Toast.makeText(this, "Send meetup request", Toast.LENGTH_SHORT).show();
-                mHandler.postDelayed(mMeetup ,500);
+                mHandler.postDelayed(mMeetup ,700);
                 break;
             case 2:
                 Toast.makeText(this, "Friends Schedule", Toast.LENGTH_SHORT).show();
@@ -78,11 +78,11 @@ public class StartsideActivity extends AppCompatActivity implements OnMenuSelect
 
     @Override
     public void onMenuOpened() {
-        Toast.makeText(this, "Menu Opened", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "Menu Opened", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onMenuClosed() {
-        Toast.makeText(this, "Menu Closed", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "Menu Closed", Toast.LENGTH_SHORT).show();
     }
 }

@@ -39,13 +39,14 @@
         <activity android:name=".MeetupActivity">
             />
         </activity>
-        <activity android:name=".EventsActivity"></activity>
+        <activity android:name=".EventsActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAtN2eLnJ-OGjWJY4DxULHX3iAnPxTuogk"></meta-data>
+            android:value="AIzaSyAtN2eLnJ-OGjWJY4DxULHX3iAnPxTuogk" />
 
-        <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".LogIn_firebase"></activity>
     </application>
 
 </manifest>

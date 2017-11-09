@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Worldo_v01</string>
+    <string name="signed_out">Logged out</string>
+    <string name="google_status_fmt">%s</string>
+    <string name="firebase_status_fmt">%s</string>
 </resources>

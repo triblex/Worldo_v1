@@ -36,7 +36,7 @@ public class EventsActivity extends AppCompatActivity {
             PlacePicker.IntentBuilder builder = new PlacePicker.IntentBuilder();
             Context context = this;
             try {
-                startActivityForResult(builder.build(context), PLACE_PICKER_REQUEST);
+                startActivityForResult(builder.build(this), PLACE_PICKER_REQUEST);
             } catch (GooglePlayServicesRepairableException e) {
                 e.printStackTrace();
             } catch (GooglePlayServicesNotAvailableException e) {

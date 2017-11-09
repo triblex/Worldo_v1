@@ -17,7 +17,16 @@ public class singleton {
         admin.email = "Admin@admin.com";
         admin.username = "admin";
         admin.password = "1234";
+
+        User temp = new User();
+        admin.name = " ";
+        admin.age = " ";
+        admin.email = " ";
+        admin.username = " ";
+        admin.password = " ";
+
         users.add(admin);
+        users.add(temp);
     }
 
 }
