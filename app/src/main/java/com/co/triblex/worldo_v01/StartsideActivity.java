@@ -32,7 +32,10 @@ public class StartsideActivity extends AppCompatActivity implements OnMenuSelect
         circleMenu.addSubMenu(Color.parseColor("#258CFF"), R.drawable.ic_action_select_all);
         circleMenu.addSubMenu(Color.parseColor("#30A400"), R.drawable.ic_action_send);
         circleMenu.addSubMenu(Color.parseColor("#FF4B32"), R.drawable.ic_action_user);
+        circleMenu.addSubMenu(Color.parseColor("#FF1B42"), R.drawable.ic_action_attach);
         circleMenu.addSubMenu(Color.parseColor("#FF1B42"), R.drawable.ic_action_share);
+        circleMenu.addSubMenu(Color.parseColor("#FF1B42"), R.drawable.ic_action_star);
+        circleMenu.addSubMenu(Color.parseColor("#FF1B42"), R.drawable.ic_action_mail);
         circleMenu.setOnMenuSelectedListener(this);
         circleMenu.setOnMenuStatusChangeListener(this);
     }
@@ -42,17 +45,26 @@ public class StartsideActivity extends AppCompatActivity implements OnMenuSelect
         switch(i){
             case 0:
                 Toast.makeText(this, "EventsActivity", Toast.LENGTH_SHORT).show();
-                mHandler.postDelayed(mEvents,700);
+                mHandler.postDelayed(mEvents,900);
                 break;
             case 1:
                 Toast.makeText(this, "Send meetup request", Toast.LENGTH_SHORT).show();
-                mHandler.postDelayed(mMeetup ,700);
+                mHandler.postDelayed(mMeetup ,900);
                 break;
             case 2:
                 Toast.makeText(this, "Friends Schedule", Toast.LENGTH_SHORT).show();
                 break;
             case 3:
                 Toast.makeText(this, "Friends", Toast.LENGTH_SHORT).show();
+                break;
+            case 4:
+                Toast.makeText(this, "Profile", Toast.LENGTH_SHORT).show();
+                break;
+            case 5:
+                Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
+                break;
+            case 6:
+                Toast.makeText(this, "Help", Toast.LENGTH_SHORT).show();
                 break;
             default:
                 Toast.makeText(this, "BRRRRRRAA", Toast.LENGTH_SHORT).show();

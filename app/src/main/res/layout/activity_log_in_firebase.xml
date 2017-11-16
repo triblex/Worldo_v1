@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.co.triblex.worldo_v01.LogIn_firebase">
+    tools:context="com.co.triblex.worldo_v01.LogIn_Firebase_Activity">
 
     <TextView
         android:id="@+id/mStatusTextView"
@@ -49,7 +49,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passTxt"
-        app:layout_constraintVertical_bias="0.31" />
+        app:layout_constraintVertical_bias="0.453" />
 
     <Button
         android:id="@+id/sign_in_button"
@@ -62,9 +62,10 @@
         android:text="sign in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.787"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passTxt"
-        app:layout_constraintVertical_bias="0.314" />
+        app:layout_constraintVertical_bias="0.458" />
 
     <EditText
         android:id="@+id/emailTxt"
@@ -99,22 +100,52 @@
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailTxt"
-        app:layout_constraintVertical_bias="0.129" />
+        app:layout_constraintVertical_bias="0.056" />
 
-    <TextView
-        android:id="@+id/sign_up_link"
+    <Button
+        android:id="@+id/sign_up_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:clickable="true"
-        android:text="Sign Up"
+        android:text="Sign up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passTxt"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_out_and_disconnect"
+        app:layout_constraintVertical_bias="0.294" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.105" />
 </android.support.constraint.ConstraintLayout>

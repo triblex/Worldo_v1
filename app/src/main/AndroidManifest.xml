@@ -21,6 +21,11 @@
         android:name="android.hardware.camera.autofocus"
         android:required="false" />
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -28,25 +33,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LogInActivity">
+        <activity android:name=".LogIn_Firebase_Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".StartsideActivity" />
-        <activity android:name=".MeetupActivity">
-            />
-        </activity>
+        <activity
+            android:name=".StartsideActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MeetupActivity" />
         <activity android:name=".EventsActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".LogInActivity" />
+        <activity
+            android:name=".popup_signup_activity"
+            android:theme="@style/AppTheme.transparentTheme" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAtN2eLnJ-OGjWJY4DxULHX3iAnPxTuogk" />
 
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".LogIn_firebase"></activity>
+        <activity android:name=".ProfileActivity"></activity>
     </application>
 
 </manifest>
