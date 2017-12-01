@@ -98,7 +98,7 @@ public class LogIn_Firebase_Activity extends AppCompatActivity implements View.O
         if (view == continue_button) {
             FirebaseUser currentUser = mAuth.getCurrentUser();
             if (currentUser != null) {
-                Intent i = new Intent(LogIn_Firebase_Activity.this, StartsideActivity.class);
+                Intent i = new Intent(LogIn_Firebase_Activity.this, MainMenuActivity.class);
                 startActivity(i);
             }
         }

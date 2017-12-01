@@ -5,9 +5,20 @@ package com.co.triblex.worldo_v01;
  */
 
 public class User {
-    String name = null;
-    String age = null;
-    String password = null;
-    String username = null;
-    String email = null;
+
+    User(String age, String country, String language, String phone){
+        this.age = age;
+        this.country = country;
+        this.language = language;
+        this.phone = phone;
+    }
+
+    User(){
+
+    }
+    //String name = null;
+    public String age = null;
+    public String country = null;
+    public String language = null;
+    public String phone = null;
 }

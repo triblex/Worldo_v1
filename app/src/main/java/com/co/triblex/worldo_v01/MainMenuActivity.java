@@ -12,7 +12,7 @@ import com.hitomi.cmlibrary.CircleMenu;
 import com.hitomi.cmlibrary.OnMenuSelectedListener;
 import com.hitomi.cmlibrary.OnMenuStatusChangeListener;
 
-public class StartsideActivity extends AppCompatActivity implements OnMenuSelectedListener, OnMenuStatusChangeListener {
+public class MainMenuActivity extends AppCompatActivity implements OnMenuSelectedListener, OnMenuStatusChangeListener {
     private CircleMenu circleMenu;
     Handler mHandler = new Handler();
 
@@ -29,13 +29,12 @@ public class StartsideActivity extends AppCompatActivity implements OnMenuSelect
     private void initView() {
         circleMenu = (CircleMenu) findViewById(R.id.cm);
         circleMenu.setMainMenu(Color.BLUE, R.drawable.ic_action_overflow, R.drawable.ic_action_locate);
-        circleMenu.addSubMenu(Color.parseColor("#258CFF"), R.drawable.ic_action_select_all);
+        circleMenu.addSubMenu(Color.parseColor("#258CFF"), R.drawable.ic_action_user);
         circleMenu.addSubMenu(Color.parseColor("#30A400"), R.drawable.ic_action_send);
-        circleMenu.addSubMenu(Color.parseColor("#FF4B32"), R.drawable.ic_action_user);
-        circleMenu.addSubMenu(Color.parseColor("#FF1B42"), R.drawable.ic_action_attach);
-        circleMenu.addSubMenu(Color.parseColor("#FF1B42"), R.drawable.ic_action_share);
-        circleMenu.addSubMenu(Color.parseColor("#FF1B42"), R.drawable.ic_action_star);
-        circleMenu.addSubMenu(Color.parseColor("#FF1B42"), R.drawable.ic_action_mail);
+        circleMenu.addSubMenu(Color.parseColor("#FF4B32"), R.drawable.ic_action_select_all);
+        circleMenu.addSubMenu(Color.parseColor("#242424"), R.drawable.ic_action_user_add);
+        circleMenu.addSubMenu(Color.parseColor("#9B59B6"), R.drawable.ic_action_share);
+        circleMenu.addSubMenu(Color.parseColor("#990000"), R.drawable.ic_action_search);
         circleMenu.setOnMenuSelectedListener(this);
         circleMenu.setOnMenuStatusChangeListener(this);
     }
@@ -44,33 +43,54 @@ public class StartsideActivity extends AppCompatActivity implements OnMenuSelect
     public void onMenuSelected(int i) {
         switch(i){
             case 0:
-                Toast.makeText(this, "EventsActivity", Toast.LENGTH_SHORT).show();
-                mHandler.postDelayed(mEvents,900);
+                Toast.makeText(this, "Profile", Toast.LENGTH_SHORT).show();
+                mHandler.postDelayed(mProfile ,900);
                 break;
             case 1:
                 Toast.makeText(this, "Send meetup request", Toast.LENGTH_SHORT).show();
                 mHandler.postDelayed(mMeetup ,900);
                 break;
             case 2:
-                Toast.makeText(this, "Friends Schedule", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "EventsActivity", Toast.LENGTH_SHORT).show();
+                mHandler.postDelayed(mEvents,900);
                 break;
             case 3:
                 Toast.makeText(this, "Friends", Toast.LENGTH_SHORT).show();
                 break;
             case 4:
-                Toast.makeText(this, "Profile", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Flight tickets", Toast.LENGTH_SHORT).show();
+                mHandler.postDelayed(mFlightTickets,900);
                 break;
             case 5:
-                Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
-                break;
-            case 6:
                 Toast.makeText(this, "Help", Toast.LENGTH_SHORT).show();
+                mHandler.postDelayed(mHelp ,900);
                 break;
             default:
                 Toast.makeText(this, "BRRRRRRAA", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
+
+    private Runnable mProfile= new Runnable() {
+        public void run() {
+            Intent i = new Intent(getApplicationContext(),ProfileActivity.class);
+            startActivity(i);
+        }
+    };
+
+    private Runnable mFlightTickets= new Runnable() {
+        public void run() {
+            Intent i = new Intent(getApplicationContext(),WebViewActivity.class);
+            startActivity(i);
+        }
+    };
+
+    private Runnable mHelp= new Runnable() {
+        public void run() {
+            Intent i = new Intent(getApplicationContext(),HelpActivity.class);
+            startActivity(i);
+        }
+    };
 
     private Runnable mEvents= new Runnable() {
         public void run() {

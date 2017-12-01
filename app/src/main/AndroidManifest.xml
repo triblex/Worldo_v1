@@ -41,13 +41,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".StartsideActivity"
+            android:name=".MainMenuActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
         <activity android:name=".MeetupActivity" />
         <activity android:name=".EventsActivity" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".LogInActivity" />
         <activity
             android:name=".popup_signup_activity"
             android:theme="@style/AppTheme.transparentTheme" />
@@ -56,7 +54,10 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAtN2eLnJ-OGjWJY4DxULHX3iAnPxTuogk" />
 
-        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".WebViewActivity" />
     </application>
 
 </manifest>

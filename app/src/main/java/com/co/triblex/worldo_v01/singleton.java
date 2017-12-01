@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class singleton {
     public static ArrayList<User> users = new ArrayList<>();
 
-
+/*
     singleton(){
         User admin = new User();
         admin.name = "Admin";
@@ -28,5 +28,5 @@ public class singleton {
         users.add(admin);
         users.add(temp);
     }
-
+*/
 }
