@@ -29,12 +29,12 @@ public class MainMenuActivity extends AppCompatActivity implements OnMenuSelecte
     private void initView() {
         circleMenu = (CircleMenu) findViewById(R.id.cm);
         circleMenu.setMainMenu(Color.BLUE, R.drawable.ic_action_overflow, R.drawable.ic_action_locate);
-        circleMenu.addSubMenu(Color.parseColor("#258CFF"), R.drawable.ic_action_user);
-        circleMenu.addSubMenu(Color.parseColor("#30A400"), R.drawable.ic_action_send);
-        circleMenu.addSubMenu(Color.parseColor("#FF4B32"), R.drawable.ic_action_select_all);
-        circleMenu.addSubMenu(Color.parseColor("#242424"), R.drawable.ic_action_user_add);
-        circleMenu.addSubMenu(Color.parseColor("#9B59B6"), R.drawable.ic_action_share);
-        circleMenu.addSubMenu(Color.parseColor("#990000"), R.drawable.ic_action_search);
+        circleMenu.addSubMenu(Color.parseColor("#258CFF"), R.drawable.profile);
+        circleMenu.addSubMenu(Color.parseColor("#30A400"), R.drawable.meetup);
+        circleMenu.addSubMenu(Color.parseColor("#FF4B32"), R.drawable.events);
+        circleMenu.addSubMenu(Color.parseColor("#242424"), R.drawable.friends);
+        circleMenu.addSubMenu(Color.parseColor("#9B59B6"), R.drawable.tickets);
+        circleMenu.addSubMenu(Color.parseColor("#990000"), R.drawable.help);
         circleMenu.setOnMenuSelectedListener(this);
         circleMenu.setOnMenuStatusChangeListener(this);
     }

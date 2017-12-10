@@ -28,9 +28,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/worldo_ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/worldo_ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".LogIn_Firebase_Activity">
@@ -46,6 +46,7 @@
             android:screenOrientation="portrait" />
         <activity android:name=".MeetupActivity" />
         <activity android:name=".EventsActivity" />
+        <activity android:name=".MapActivity" />
         <activity
             android:name=".popup_signup_activity"
             android:theme="@style/AppTheme.transparentTheme" />

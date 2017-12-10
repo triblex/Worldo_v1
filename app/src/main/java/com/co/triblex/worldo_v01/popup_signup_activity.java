@@ -78,8 +78,6 @@ public class popup_signup_activity extends AppCompatActivity implements View.OnC
                             Log.w("SignUp", "createUserWithEmail:failure", task.getException());
                             Toast.makeText(popup_signup_activity.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
                         }
-
-                        // ...
                     }
                 });
             }
@@ -92,7 +90,6 @@ public class popup_signup_activity extends AppCompatActivity implements View.OnC
                 .setDisplayName(displayName)
                 //.setPhotoUri(Uri.parse("https://example.com/jane-q-user/profile.jpg"))
                 .build();
-
         user.updateProfile(profileUpdates)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
