@@ -44,7 +44,8 @@
             android:name=".MainMenuActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
-        <activity android:name=".MeetupActivity" />
+        <activity android:name=".MeetupActivity"
+            android:screenOrientation="portrait" />/>
         <activity android:name=".EventsActivity" />
         <activity android:name=".MapActivity" />
         <activity

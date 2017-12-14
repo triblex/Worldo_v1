@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.Build;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -49,12 +50,18 @@ public class MeetupActivity extends AppCompatActivity implements View.OnClickLis
             intent.setAction(Intent.ACTION_GET_CONTENT);
             startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
         }
+
         if(view == buttonCamera) {
-            if(checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+            if (Build.VERSION.SDK_INT>22){
+                if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+                    invokeCamera();
+                } else {
+                    String[] permissionRequest = {Manifest.permission.CAMERA};
+                    requestPermissions(permissionRequest, CAMERA_PERMISSION_REQUEST_CODE);
+                }
+            }
+            else {
                 invokeCamera();
-            } else {
-                String[] permissionRequest = {Manifest.permission.CAMERA};
-                requestPermissions(permissionRequest, CAMERA_PERMISSION_REQUEST_CODE);
             }
         }
     }

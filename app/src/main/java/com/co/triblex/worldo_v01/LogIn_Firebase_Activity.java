@@ -121,6 +121,7 @@ public class LogIn_Firebase_Activity extends AppCompatActivity implements View.O
 
             user.getPhoneNumber();
 
+            mDisplayNameTextView.setVisibility(View.VISIBLE);
             sign_in_button.setVisibility(View.GONE);
             sign_out_and_disconnect.setVisibility(View.VISIBLE);
             sign_up_button.setVisibility(View.GONE);
@@ -128,9 +129,9 @@ public class LogIn_Firebase_Activity extends AppCompatActivity implements View.O
             passTxt.setVisibility(View.GONE);
             continue_button.setVisibility(View.VISIBLE);
 
-
         } else {
 
+            mDisplayNameTextView.setVisibility(View.GONE);
             mStatusTextView.setText(R.string.signed_out);
             mDetailTextView.setText(null);
 

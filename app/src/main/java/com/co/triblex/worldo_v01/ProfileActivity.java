@@ -10,7 +10,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class ProfileActivity extends AppCompatActivity /* implements EditProfileFrag.OnSaveListener */ {
+public class ProfileActivity extends AppCompatActivity  {
 
     private FirebaseAuth mAuth;
 
